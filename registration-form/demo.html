@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #video {
+            display: none;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #captureBtn {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Camera Capture</title>
+</head>
+<body>
+    <button id="captureBtn" onclick="openCamera()">Open Camera</button>
+    <video id="video" autoplay></video>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const video = document.getElementById('video');
+            const captureBtn = document.getElementById('captureBtn');
+
+            let stream;
+
+            function openCamera() {
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({ video: true })
+                        .then(function (cameraStream) {
+                            stream = cameraStream;
+                            video.srcObject = cameraStream;
+                            video.style.display = 'block';
+                            captureBtn.style.display = 'none';
+                        })
+                        .catch(function (error) {
+                            console.error('Error accessing the camera:', error);
+                        });
+                } else {
+                    console.error('getUserMedia is not supported in this browser');
+                }
+            }
+
+            function captureImage() {
+                if (stream) {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    const context = canvas.getContext('2d');
+                    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                    const imageData = canvas.toDataURL('image/png');
+                    console.log('Captured image:', imageData);
+                } else {
+                    console.error('Camera not open. Click "Open Camera" first.');
+                }
+            }
+
+            window.captureImage = captureImage;
+        });
+    </script>
+</body>
+</html>

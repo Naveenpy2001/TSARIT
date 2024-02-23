@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TSAR-IT | Course Registration-Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/06a08d1706.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section>
+      <div class="div">
+        <div class="form-container">
+          <form action="">
+            <div class="header">
+              <img src="../TSAR-IT-logo.png" alt="TSAR-IT" style="width: 20%;"/>
+            </div>
+            <div>
+              <p class="whitText">Fill out the form carefully for registration</p>
+            </div>
+            <div class="form-sec-1 ">
+              <div class="block">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" required autocomplete="off" />
+              </div>
+              <div class="block">
+                <label for="">Last Name</label>
+                <input type="text" name="" id="" required autocomplete="off" />
+              </div>
+              <div class="block">
+                <label for="">date</label>
+                <input type="date" name="" id="" required autocomplete="off" />
+              </div>
+              <div class="block">
+                <label for="">Phone No.</label>
+                <input type="text" name="" id="" required autocomplete="off" />
+              </div>
+            </div>
+            <!-- section - 2 -->
+            <div class="form-sec-2">
+              <div class="block-address">
+                <label for="">Address</label>
+                <input type="text" name="" id="" required placeholder="Street Address"/>
+              </div>
+              <div class="block-address">
+                <input type="text" name="" id="" required placeholder="Street Address 2"/>
+              </div>
+              <div class="block-address-city">
+                <div class="block-flex-addr">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    required
+                    placeholder="city"
+                  />
+                </div>
+                <div class="block-flex-addr">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    required
+                    placeholder="Postal / Zip Code"
+
+                  />
+                </div>
+              </div>
+              <div class="block-address">
+                <input type="text" name="" id="" required placeholder="State / Province"/>
+              </div>
+            </div>
+            <!-- section - 3 -->
+            <div class="block-email">
+              <div class="block">
+                <label for="stdemail">student email</label>
+                <input type="email" name="stdemail" id="stdemail" placeholder="example@example.com"/>
+              </div>
+              <div class="block">
+                <label for="stdphno">phone no.</label>
+                <input type="number" name="stdphno" id="stdphno" placeholder="+91 00000 00000"/>
+              </div>
+            </div>
+            <div class="block course" style="width: 100%;">
+              <label for="">Courses</label>
+              <select name="" id="" >
+                <option value="">select Course</option>
+              </select>
+            </div>
+            <div class="block" style="width: 100%;">
+              <label for="">Referred By (HR Name)</label>
+              <input type="text" name="" id="" />
+            </div>
+            <label for="msg" class="label-textar">Additional Comments</label><br />
+            <textarea name="msg" id="msg" cols="40" rows="4"></textarea>
+            <!-- code for taking user -->
+            <div class="block" style="width: 100%;">
+              <label for="" label>
+              <button class="selfie"><i class="fa-solid fa-camera"></i> Click Image</button>
+            </div>
+            <div class="qr-scanner">
+              <div class="qr-img">
+                <img src="" alt="TSAR-IT || QR-code" />
+              </div>
+              <div class="text">scan for pay</div>
+            </div>
+            <div class="block" style="width: 100%;">
+              <p>Enter transaction ID : <input type="text" name="" id="" /></p>
+            </div>
+            <center><button class="submit">Submit</button></center>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      let input = document.getElementsByTagName('input');
+      let bg = document.querySelector('.form-sec-1')
+     
+     input.onclick = () => {
+      if (bg.classList == 'form-sec-1'){
+      bg.classList.add('active');
+      console.log('hello');
+      }
+     }
+    </script>
+  </body>
+</html>

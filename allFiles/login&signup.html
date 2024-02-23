@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Image and Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/06a08d1706.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="../internship-pages/TSAR-IT.png" alt="Image" class="logo" />
+      </div>
+      <div class="form-container">
+        <div id="tabs">
+          <button class="tab" onclick="toggleForm('login-form')">
+            <i class="fa-regular fa-circle-user"></i> Login
+          </button>
+          <button class="tab" onclick="toggleForm('signup-form')">
+            <i class="fa-solid fa-users"></i> Sign Up
+          </button>
+        </div>
+        <form id="login-form" class="form">
+          <h2 class="img-icon">
+            <i class="fa-regular icon fa-circle-user"></i>
+          </h2>
+          <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="flex">
+            <div class="block-1">
+              <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+              <span> Show Password</span>
+            </div>
+            <div class="block-2">
+              <a href="#">Forgot Password</a>
+            </div>
+          </div>
+          <button type="submit" class="button">Login</button>
+        </form>
+        <form id="signup-form" class="form">
+          <h2 class="img-icon"><i class="fa-solid icon fa-users"></i></h2>
+          <div class="input-group">
+            <label for="new-username">First Name :</label>
+            <input type="text" id="new-username" name="new-username" required />
+          </div>
+          <div class="input-group">
+            <label for="new-username">Last Name :</label>
+            <input type="text" id="new-username" name="new-username" required />
+          </div>
+          <div class="input-group">
+            <label for="new-username">Email:</label>
+            <input
+              type="email"
+              id="new-username"
+              name="new-username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="new-password">Password:</label>
+            <input
+              type="password"
+              id="new-password"
+              name="new-password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <div class="block">
+            <div class="pswd">
+              <input type="checkbox" name="check" id="check" /><span
+                >Show Password</span
+              >
+            </div>
+          </div>
+          <button type="submit" class="button">Sign Up</button>
+        </form>
+        <div class="hr">
+          <hr />
+          <span class="span-or">Or</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleForm(formId) {
+        document.querySelectorAll(".form").forEach((form) => {
+          form.style.display = "none";
+        });
+
+        document.getElementById(formId).style.display = "block";
+      }
+      let checkBox = document.getElementById("check");
+      let checkBox2 = document.getElementById("checkbox-2");
+
+      const showSignPswd = () => {
+        let password = document.getElementById("new-password");
+        let rePassword = document.getElementById("confirm-password");
+
+        if (password.type === "password" && rePassword.type == "password") {
+          password.type = "text";
+          rePassword.type = "text";
+        } else {
+          password.type = "password";
+          rePassword.type = "password";
+        }
+      };
+      let passwordMain = document.getElementById("password");
+      const showLoginPswd = () => {
+        if (passwordMain.type == "password") {
+          passwordMain.type = "text";
+        } else {
+          passwordMain.type = "password";
+        }
+      };
+      checkBox.addEventListener("click", showSignPswd);
+      checkBox2.addEventListener("click", showLoginPswd);
+    </script>
+  </body>
+</html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+  :root {
+    --primaryBackground: #212529;
+  }
+  ::selection {
+    background-color: #050540;
+    color: #fff;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* line-height: 1.1; */
+    font-family: "Raleway", "Poppins", sans-serif;
+    font-weight: 500;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  :before,
+  :after {
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+    width: 18px;
+    background-color: #ffffff;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: #05053930;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: linear-gradient(200deg, #040429 30%, #28286efe);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #000000f3,
+        #00000091,
+        #00000027,
+        #00000091
+      ),
+      url("./banner-back.jpg") center/cover no-repeat;
+  }
+  .logo {
+    width: 20%;
+  }
+  .image-container {
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 50vh;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 430px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    background: linear-gradient(to right, #12132d, #21258ea1, #12132d);
+  }
+
+  #tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    user-select: none;
+    color: #000;
+    border: 0;
+    border-left: 3px solid #7e9aff;
+  }
+  .tab:nth-child(1) {
+    border-left: none;
+  }
+  .tab:hover {
+    background-color: #95c8ff;
+  }
+  .tab:focus {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  .form {
+    display: none;
+    padding: 10px 30px;
+    color: #fff;
+  }
+
+  /* Initially show the login form */
+  #login-form {
+    display: block;
+  }
+
+  #signup-form {
+    display: none;
+  }
+
+  #login-form h2,
+  #signup-form h2 {
+    color: #fff;
+  }
+  .img-icon {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+  }
+  .icon {
+    padding: 20px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    margin: 5px 0;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .button {
+    width: 30%;
+    padding: 7px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .flex {
+    display: flex;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .block-1 {
+    width: 100%;
+  }
+  .block-2 {
+    width: 100%;
+    text-align: end;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  hr {
+    border-radius: 100%;
+    width: 80%;
+    position: relative;
+  }
+  .hr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .span-or {
+    position: absolute;
+    background-color: #fff;
+    padding: 2px 6px;
+    font-size: 10px;
+  }
+</style>

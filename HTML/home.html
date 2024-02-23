@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-page</title>
+    <link rel="shortcut icon" href="../media/c-logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/06a08d1706.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+  .swiper-pagination-bullet {
+    display: none;
+  }
+  .card {
+    position: relative;
+    background-color: #fff;
+    height: 190px;
+    width: 390px;
+    margin: 0 0;
+  }
+  .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    z-index: 100;
+  }
+  .swiper {
+    width: 980px;
+  }
+  .slide-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .slide-section .card .image {
+    height: 140px;
+    width: 240px;
+    padding: 3px;
+    background: #ffffff;
+    /* box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25); */
+  }
+  .slide-section .card .image img {
+    height: 100%;
+    width: 100%;
+    /* aspect-ratio: 3/2; */
+  }
+  .card .media-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .media-icons i {
+    color: #fff;
+    opacity: 0.7;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .card .media-icons i:hover {
+    opacity: 1;
+  }
+  .card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+  }
+</style>
+  </head>
+  <body>
+    
+    <section style="padding: 0px; margin: 0">
+      <div class="container">
+        <div class="info">
+          <div class="name">
+            <h1 style="font-weight: 500; color: rgb(80, 80, 221)">
+              TSAR-IT PVT LTD
+            </h1>
+          </div>
+          <div class="info-text">
+            <div class="domain">
+              <div class="container-1">
+                <p>
+                  <span class="typed-text"></span
+                  ><span class="cursor">&nbsp;</span>
+                </p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
+              at! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nulla, natus.
+            </p>
+          </div>
+          <div class="contact-1">
+            <a href="./about.html" class="contact-link"
+              >Contact Us &nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="main-video-back">
+          <video autoplay loop muted>
+            <source
+              src="../clients-png/background-banner.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="about-content">
+        <div class="about-section">
+          <h1
+            class="title"
+            style="
+              font-size: 54px;
+              color: #12132d;
+              transform: translateY(-30px);
+              border: 0;
+              padding: 10px 0;
+            "
+          >
+            About Us
+          </h1>
+
+          <div class="about-top">
+            <h1 class="about">ABOUT OUR COMPANY</h1>
+            <p>
+              <q
+                >"If you Take any Type of Project We are Ready to Install and
+                Give Maintenance of project".</q
+              >
+            </p>
+            <p>
+              we like challenges to solve and give solutions to your business
+              growth and you can monitor your business and employees work
+              easily,
+            </p>
+            <p>
+              we will change your business hard work to easily.We offer services
+              for a wide range of fields such as software development, web
+              development, graphic development, cross platform development etc.
+              For more information navigate to our services section..
+            </p>
+            <p>
+              "Explore The ServicesWe Offer For You" we are experts in these
+              services, we have strong experience and technical expert team, we
+              have our own German Technology server, our team will complete and
+              give you project in time, we will provide our services like how
+              clients feel comfortable, we can handle any type of project with
+              low coast and we are expert in install and maintaining projects,
+              we have strong man power in all over Andhra Pradesh and Telangana
+              and Tamilnadu states ...
+            </p>
+
+            <a href="./about.html" class="learn-more-btn"
+              >More
+              <i class="fa-solid arrow-2 fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="video-container">
+          <div id="gifContainer">
+            <video autoplay muted loop>
+              <source src="../media/square-abstract-1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="title" style="padding: 20px 20px; margin: 50px 0">
+        Explore Our Services
+      </h1>
+
+      <div class="services-container back-video">
+        <div class="services">
+          <img src="../media/web-dev.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more"
+            ><h3 class="s-title">Web development</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/app-dev.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more"
+            ><h3 class="s-title">app development</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/IT-promotions.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more"
+            ><h3 class="s-title">IT Promotions</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/Payroll.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more">
+            <h3 class="s-title">Payroll Jobs</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/ngo.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more"
+            ><h3 class="s-title">NGO Consultancy</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/d-marketing.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more">
+            <h3 class="s-title">Digital Marketing</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/markeing.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more">
+            <h3 class="s-title">Internship</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="services">
+          <img src="../media/SEO.jpeg" alt="" class="service-logo" />
+          <a href="#" class="learn-more">
+            <h3 class="s-title">SEO</h3>
+            <i class="fa-solid arrow-1 fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="video-back">
+          <video autoplay muted loop class="video">
+            <source src="../media/background.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1 class="title">Explore Our Clients</h1>
+    </section>
+
+    <section class="slide-section">
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-1.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-2.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-3.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-4.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-5.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img
+                  src="../clients-png/client-6.png"
+                  alt=""
+                  class="img-gray"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="../JavaScript/home-slide.js"></script>
+    </section>
+
+    <!-- clients feed-back -->
+
+    <section>
+      <h1 class="title">Clients Feedback</h1>
+      <div class="slide-section">
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+              <div class="awards">
+                <div class="client-logo">
+                  <h1 class="name-client">ji Chandra</h1>
+                  <p class="client-p">Blue Morpho Manager.</p>
+                  <p
+                    class="client-p"
+                    style="margin-top: 15px; margin-bottom: 0"
+                  >
+                    <q>
+                      Really Awesome Services and Take Caring of Projects.
+                    </q>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="awards">
+                <div class="client-logo">
+                  <h1 class="name-client">Prasada Rao</h1>
+                  <p class="client-p">BGM Founder</p>
+                  <p
+                    class="client-p"
+                    style="margin-top: 15px; margin-bottom: 0"
+                  >
+                    <q>
+                      Nice Services, This Company will Provide World wide NGO
+                      Projects.
+                    </q>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="awards">
+                <div class="client-logo">
+                  <h1 class="name-client">Srinivasulu</h1>
+                  <p class="client-p">Jewelnidhi Manager</p>
+                  <p
+                    class="client-p"
+                    style="margin-top: 15px; margin-bottom: 0"
+                  >
+                    <q> Excellent Web Application Creation and Maintenance. </q>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="awards">
+                <div class="client-logo">
+                  <h1 class="name-client">Umesh Kumar</h1>
+                  <p class="client-p">Zippr Manager</p>
+                  <p
+                    class="client-p"
+                    style="margin-top: 15px; margin-bottom: 0"
+                  >
+                    <q> Good Company to Supply Manpower in South India. </q>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="../JavaScript/home-slide.js"></script>
+      </div>
+    </section>
+
+    <section>
+      <div class="join">
+        <div class="col-join">
+          <h1 class="title-join">Join TSAR</h1>
+          <p class="join-text">
+            Bring your big ideas and dreams. We ensure that the work is
+            engaging, our culture is empowering and the learning opportunities
+            are enriching.
+          </p>
+          <div class="span-row">
+            <span class="span">Take Risks</span>
+            <span class="span">Put Customers First</span>
+            <span class="span">Drive Excellence</span>
+            <span class="span">Build Credibility</span>
+            <span class="span">Stay Agile</span>
+            <span class="span">Be Humane</span>
+          </div>
+          <div class="join-btn">
+            <button class="join-buttons button">Life at TSAR</button>
+            <button class="join-buttons button">Search & apply</button>
+          </div>
+        </div>
+        <div class="col-img">
+          <img src="../media/join-with.jpeg" alt="" class="img-join" />
+        </div>
+      </div>
+    </section>
+    <section class="form-sec">
+      <h1 class="title" style="text-align: center; color: #000000; border: 0">
+        Talk to us
+        <p style="text-align: center; font-size: 14px; color: #000000">
+          This form is for business inquiries. Click here for
+          <a href="#" class="job-link"> job applications</a> and for
+          <a href="#" class="job-link">employee reference checks</a>.
+        </p>
+      </h1>
+      <form action="#">
+        <div class="block">
+          <input type="text" name="username" id="username" placeholder="name" />
+        </div>
+        <div class="block">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="email"
+          />
+        </div>
+        <div class="block">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Business email"
+          />
+        </div>
+        <div class="block">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Phone No."
+          />
+        </div>
+        <div class="block">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="job title"
+          />
+        </div>
+        <div class="block">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="company"
+          />
+        </div>
+        <div class="block">
+          <textarea
+            name="message"
+            id="message"
+            cols="80"
+            rows="5"
+            placeholder="Tell us more"
+          ></textarea>
+        </div>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </section>
+    <script>
+      const slider = document.getElementById("slider");
+      const slides = document.querySelectorAll(".slide");
+      const slideWidth = slides[0].clientWidth;
+      let currentIndex = 0;
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        const newPosition = -currentIndex * slideWidth;
+        slider.style.transform = `translateX(${newPosition}px)`;
+      }
+
+      setInterval(nextSlide, 2000); // Change slide every 2 seconds
+    </script>
+
+    <script src="../JavaScript/home.js"></script>
+
+    <!-- initializing swiper slider -->
+  </body>
+</html>
+

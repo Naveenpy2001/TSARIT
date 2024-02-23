@@ -1,0 +1,370 @@
+ 
+<html>
+<head>
+ 
+
+
+
+
+ 
+
+
+    
+  
+<style>
+     /* sub navigation design */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: LightGray;
+}
+
+li {
+  float:left;
+   
+}
+
+ 
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+   
+}
+
+li a:hover:not(.active) {
+  background-color: #3498db;
+    color: #fff;
+}
+
+.active {
+  background-color: orange;
+  
+}
+
+.active:hover{
+ background-color: #3498db;
+    color: #fff;
+}
+   /* sub navigation design */
+</style>
+
+ 
+ 
+ 
+  <style>
+      /* image  side text design */
+  .container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+   
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+  color:orange;
+  
+}
+.container2:hover{
+    transform:scale(1.04);
+}
+  
+  </style>
+
+
+
+  
+
+<style>
+        /* Flex container to place cards side by side */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+            justify-content: space-around; /* Space cards evenly */
+            gap: 5px; /* Add some space between cards */
+        }
+ 
+        /* Basic styling for the card */
+        .elementor-column-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 400px; /* Set a fixed width for each card */
+            height:540px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image styling */
+        .elementor-column-card img {
+            width: 100%;
+            height: 80%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Content styling */
+        .elementor-column-card .card-content {
+            padding: 3px;
+        }
+
+        /* Title styling */
+        .elementor-column-card .card-content h2 {
+            margin-top: 0;
+        }
+
+        
+      .elementor-column-card:hover{
+      transform:scale(1.05);
+      }
+ 
+    </style>
+
+ 
+
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:DodgerBlue;
+  color:white;
+}
+
+.card:hover{
+    transform:scale(1.04);
+}
+</style>
+
+ 
+<style>
+    .logo-container8 img{
+     float: left;
+  margin-left: 30px;
+  font-size: 1.5em;
+  height: 200px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+    }    
+    </style>
+    
+
+ 
+
+</head>
+
+<body>
+ 
+ 
+     
+<ul>
+      
+  <li style="float: center"><a href="#">OverView</a></li>
+  <li style="float: center"><a href="#offering">Offering</a></li>
+  <li style="float: center"><a href="Explore Insights">Insights</a></li>
+  <li style="float: right"><a class="active" href="contact-form">Connect with Us</a></li>
+</ul>
+<br><br>
+<br><br>
+ 
+ <div style="width: 100%;">
+        <div style="width: 30%; height: 200px; float: left; background: white;"> 
+            <h1 style="text-align:center">App Development</h1>
+        </div>
+        <div style="margin-left: 30%; height: 200px; background: white;"> 
+            <p>Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through a mobile web browser. The programming and markup languages used for this kind of software development include Java, Swift, C# and HTML5.<br><br>
+
+Mobile app development is rapidly growing. From retail, telecommunications and e-commerce to insurance, healthcare and government, organizations across industries must meet user expectations for real-time, convenient ways to conduct transactions and access information.<br><br>
+
+Today, mobile devices—and the mobile applications that unlock their value—are the most popular way for people and businesses to connect to the internet. To stay relevant, responsive and successful, organizations need to develop the mobile applications that their customers, partners and employees demand.</p>
+        </div>
+    </div>
+
+<br><br>
+<br>
+
+ <h1 style="text-align:center">Explore Insights</h1>
+ <br>
+ <br>
+
+ 
+
+<!-- Flex container for column cards -->
+<div class="card-container" id="Explore Insights">
+    <!-- First Card -->
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Planning</h2>
+            <p>This first stage involves completing a business analysis and creating a mobile strategy.  </p>
+            
+        </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Technical</h2>
+            <p>In this next stage, a technical writer is responsible for describing all technical details and requirements.</p>
+            
+        </div>
+    </div>
+
+     <!-- Second Card -->
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Prototyping</h2>
+            <p>In the prototyping phase, the sketch, wireframes and app skins are created. This is usually completed by a UX/UI designer.</p>
+             
+        </div>
+    </div>
+
+
+ 
+   
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Developing</h2>
+            <p>This phase includes front-end and back-end coding segments and is performed by developers.</p>
+             
+        </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Quality Assurance</h2>
+            <p>During the quality assurance phase, tech requirements are tested and the device capability is reviewed.</p>
+             
+        </div>
+    </div>
+
+     <!-- Second Card -->
+    <div class="elementor-column-card">
+        <img src="../media/app-dev.jpeg" alt="Card Image">
+        <div class="card-content">
+            <h2>Publishing</h2>
+            <p>Finally, the app is published to the app store. Maintenance is provided on an ongoing basis as updates, new releases and new bugs arise.</p>
+             
+        </div>
+    </div>
+</div>
+ </div>
+<br><br>
+<br><br>
+ 
+  <h1 style="text-align:center">Why Choose Us?</h1>
+  <br>
+  <br>
+
+<div class="row">
+     <div class="column">
+    <div class="card">
+      <h3>1.Expertise</h3>
+       
+    </div>
+  </div>
+   
+
+  <div class="column">
+    <div class="card">
+      <h3>2.Custom Solutions</h3>
+       
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>3.User-Centric Design</h3>
+       
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>4.Cross-Platform Development</h3>
+       
+    </div>
+  </div>
+
+ 
+<br>
+<br>
+<br><br>
+<br><br>
+
+
+
+<br>
+<br><br>
+<br><br>
+
+   <div class="container2">
+      <div class="image">
+        <img src="../media/app-dev.jpeg" width="800" height="400">
+      </div>
+      <div class="text">
+        <h2 >Stay ahead with TSAR IT.</h2>
+      </div>
+    </div><br>
+    <br>
+    <br><br>
+    <br><br>
+
+
+</body>
+</html>
+<style>
+  
+</style>

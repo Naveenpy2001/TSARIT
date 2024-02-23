@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/06a08d1706.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dashborad-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="company-logo">
+        <img src="" alt="TSAR-IT Logo" />
+      </div>
+      <div class="nav-items">
+        <a href="#!" class="links">My Courses</a>
+        <a href="#!" class="links">My Resources</a>
+        <a href="#!" class="links">Mock Test</a>
+        <div class="search">
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search for a couse..."
+            class="search-input"
+          />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="user">
+          <div class="drop-details">
+            <div class="img-small">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQukleU1059SFH-flP36qRWECpm9pQfQ7f50Q&usqp=CAU" alt="user-png" class="user-img"/>
+            <button class="drop-btn">
+              <i class="fa-solid fa-caret-down"></i>
+            </button>
+            </div>
+            <div class="drop-list">
+                <div class="block-hover">
+                                <a href="./profile-dashboard.html" class="a-link">
+              <div class="drop-item">
+                <span class="span-text"
+                  ><i class="fa-regular fa-user"></i> Profile</span
+                >
+              </div>
+            </a>
+            <a href="#!" class="a-link">
+              <div class="drop-item">
+                <span class="span-text"
+                  ><i class="fa-regular fa-file-lines"></i> Certificates</span
+                >
+              </div>
+            </a>
+            <a href="#!" class="a-link">
+              <div class="drop-item">
+                <span class="span-text"
+                  ><i class="fa-solid fa-square-pen"></i> Exam</span
+                >
+              </div>
+            </a>
+            <a href="#!" class="a-link">
+              <div class="drop-item">
+                <span class="span-text">
+                  <i class="fa-solid fa-receipt"></i>Invoices</span
+                >
+              </div>
+            </a>
+            <a href="#!" class="a-link">
+              <div class="drop-item">
+                <span class="span-text"
+                  ><i class="fa-solid fa-right-from-bracket"></i> Logout</span
+                >
+                </div>
+              </div>
+            </a>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="main">
+          <h1 class="header">
+            Hi <span id="user-name"><q> Nk </q></span><br>
+            Catch up with yours! Pick a Course and Start learning
+          </h1>
+          <div class="search-box">
+            
+              <div style="display: flex;">
+              <input type="search" name="courseName" id="courseName" placeholder="Search for a couse..." class="block input">
+            <button class="block btn" onclick="addTask()" id="enter"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+            </div>
+            <div id="output">
+             
+            </div>
+          </div>
+          <h1 class="header-2">Browse Category</h1>
+          <div style="display: flex; gap: 15px;">
+            <span class="span-box">message</span>
+          <span class="span-box">message</span>
+          <span class="span-box">message</span>
+          <span class="span-box">message</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const addTask = () => {
+        var userInput = document.getElementById('courseName');
+        let element = document.getElementById('output');
+        let output = document.createElement('span');
+            output.setAttribute('class','span-op')
+            userInput.value = userInput.value.toLowerCase();
+            output.textContent = userInput.value
+            userInput.value = ''
+            element.appendChild(output);
+      }
+    </script>
+  </body>
+</html>
